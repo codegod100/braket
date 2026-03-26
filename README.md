@@ -13,436 +13,600 @@ This is not philosophy. This is demonstration.
 
 ---
 
-## The Grammar
+## The Grammar in Plain Terms
 
-We start with exactly two building blocks:
+### The Two Building Blocks
 
-- **Ket** `|x⟩` — a vector, a value, an object
-- **Bra** `⟨x|` — a covector, a measurement, an observer
+Imagine you have two kinds of containers:
 
-And one way to combine them:
+**A Ket `|x⟩`** — think of it as a box with something inside. The label `x` tells you what's in it. You can think of a ket as "a thing" or "a value" or simply "something that exists."
 
-- **Juxtaposition** `term term` — putting things next to each other
+**A Bra `⟨x|`** — think of it as a mold or template that matches a specific box. The label `x` tells you which boxes it fits. You can think of a bra as "a question" or "a test" or "something that checks."
 
-That's it. No numbers. No operations. No primitives.
+These are mirror images of each other. Every box has a matching mold. Every mold has a matching box.
 
-Just labeled containers and the ability to place them side by side.
+**The labels matter.** A mold labeled `x` only fits boxes labeled `x`. It doesn't fit boxes labeled `y`.
+
+### The One Way to Combine
+
+There's only one operation: put things next to each other.
+
+When you put a bra next to a ket, you're asking: "Does this mold fit this box?"
+
+```
+⟨x|  |y⟩   ← bra next to ket
+```
+
+That's it. The entire grammar is:
+
+1. You can make a box with any label: `|anything⟩`
+2. You can make a mold with any label: `⟨anything|`
+3. You can put things next to each other
+
+No addition. No multiplication. No numbers. Just boxes, molds, and adjacency.
 
 ---
 
-## The Single Rule
+## The Single Rule in Plain Terms
 
-When a bra and ket share the same label, they collapse:
+### The Collapse
+
+When a mold finds its matching box, something happens:
 
 ```
-⟨x|x⟩ → ─
+⟨x|  |x⟩  →  ─
 ```
 
-The symbol `─` represents the identity element — zero, one, the empty product, the ground state.
+Read this as: "The mold labeled x, when placed next to the box labeled x, collapses into the neutral element."
 
-This rule is called **yanking**. It is the only computational step.
+The symbol `─` represents "nothing special" or "the baseline" or "neutral." It's the state where there's no distinction, no difference, no separation.
+
+**This is the only rule.** When labels match, the pair disappears into neutrality.
+
+### Why This Is Profound
+
+Consider what just happened:
+
+1. You had two things (a bra and a ket)
+2. They had the same label
+3. They became one thing (the neutral element)
+
+This is **recognition**. The mold recognized the box. The question found its answer. The seeker met the sought.
+
+When a thing meets its match, the distinction vanishes. They were always the same thing, viewed from opposite directions.
+
+The rule doesn't destroy information — it reveals that the separation was illusory. `⟨x|` and `|x⟩` were always two views of `x`. The yanking shows they're actually one.
+
+### What Happens When Labels Don't Match?
+
+```
+⟨x|  |y⟩  →  ⟨x|y⟩   (no collapse)
+```
+
+The pair stays. The mold doesn't fit the box. The question doesn't match the answer.
+
+This is tension. This is distinction. This is "something" rather than "nothing."
+
+**All of mathematics is the study of what happens when labels don't match — and what follows when they finally do.**
 
 ---
 
 ## Emergence: Numbers
 
-### Integers
+### Why Numbers Work This Way
 
-An integer is a bra-ket pair:
+Here's the key insight: **a number is a measurement.**
 
-```
-⟨5|0⟩ = 5    (five more than zero)
-⟨0|3⟩ = -3   (three less than zero)
-⟨7|3⟩ = 4    (seven minus three)
-```
+When you say "there are five apples," you're really saying: "I have something (apples) and I'm measuring it against a standard (five)."
 
-The value is computed by subtraction: `⟨p|n⟩ = p - n`.
+In bra-ket terms, a number is a pair: a bra (the standard) and a ket (the thing being measured).
 
-**Why does this work?** 
+### Integers as Bra-Ket Pairs
 
-Consider what happens when we juxtapose integers:
+Let's make this concrete. We'll represent numbers as the "distance" between a bra and a ket:
 
 ```
-⟨5|0⟩ ⟨2|0⟩ → ⟨7|0⟩    (5 + 2 = 7)
+⟨5|0⟩ = 5    ← "the standard is 5, and I have 0 less than that"
+⟨0|3⟩ = -3   ← "the standard is 0, and I have 3 more than that"  
+⟨7|3⟩ = 4    ← "the standard is 7, and I have 3 less than that"
 ```
 
-The kets merge: `|0⟩|0⟩ → |0+0⟩ = |0⟩`. The bras merge similarly.
+**The formula:** `⟨standard|actual⟩ = standard - actual`
 
-This is addition. It emerges from the structure.
+Why does subtraction work? Because when you measure something, you're computing the gap between what you expected (the standard, the bra) and what you have (the actual, the ket).
 
-### Negative Numbers
+### Zero Is Self-Matching
 
-Negation is swapping bra and ket:
+Watch what happens when a number matches itself:
 
 ```
--⟨5|0⟩ = ⟨0|5⟩ = -5
+⟨5|5⟩ → ─   (yanking!)
 ```
 
-The structure encodes sign inherently. A bra-heavy pair is positive; a ket-heavy pair is negative.
+When the standard is 5 and you have exactly 5, there's no gap. No difference. No number.
+
+**Zero is the absence of distinction.** It's what you get when a bra and ket share a label.
+
+This is why `⟨0|0⟩ = 0`. The standard is zero, you have zero. No gap. Just `─`.
 
 ---
 
 ## Emergence: Arithmetic
 
-### Addition
+### Addition: Combining Measurements
+
+If you have `⟨5|0⟩` (five) and `⟨3|0⟩` (three), what happens when you put them together?
+
+The kets stack: `|0⟩|0⟩` becomes `|0+0⟩ = |0⟩`. The bras stack similarly: `⟨5|⟨3|` becomes `⟨5+3|`.
+
+Result: `⟨8|0⟩ = 8`.
+
+**Addition is just stacking the standards.**
+
+### Negation: Swapping Roles
+
+What's the opposite of `⟨5|0⟩`? Swap the bra and ket:
 
 ```
-⟨a|b⟩ + ⟨c|d⟩ = ⟨a+c|b+d⟩
+⟨5|0⟩ → ⟨0|5⟩ = -5
 ```
 
-Simply merge the labels component-wise.
+If the standard is 5 and you have 0, you're "5 ahead." If the standard is 0 and you have 5, you're "5 behind."
 
-### Subtraction
+**Negative numbers come from reversing which is the standard and which is the measured.**
 
-Add the negation:
+### Multiplication: The Sign Revelation
 
-```
-⟨a|b⟩ - ⟨c|d⟩ = ⟨a|b⟩ + ⟨d|c⟩ = ⟨a+d|b+c⟩
-```
+Here's where it gets remarkable. What happens when you multiply?
 
-### Multiplication
+Remember: bras and kets are opposite types. When you combine them, their types combine too.
 
-Multiplication signs emerge from the bra-ket structure itself.
+Think of bra as "positive" and ket as "negative." Now watch:
 
-When you multiply atoms:
+| Multiply | Bra (positive) | Ket (negative) |
+|----------|----------------|----------------|
+| **Bra (positive)** | Bra (positive) | Ket (negative) |
+| **Ket (negative)** | Ket (negative) | Bra (positive) |
 
-| × | Bra ⟨n| | Ket |m⟩ |
-|---|---------|-------|
-| **Bra ⟨a\|** | Bra ⟨ab\| | Ket \|ab⟩ |
-| **Ket \|b⟩** | Ket \|ab⟩ | Bra ⟨ab\| |
+**Same types → positive. Different types → negative.**
 
-**Observe:**
-- Bra × Bra → Bra (positive × positive = positive)
-- Ket × Ket → Bra (negative × negative = positive)
-- Bra × Ket → Ket (positive × negative = negative)
-- Ket × Bra → Ket (negative × positive = negative)
+This is why:
 
-The sign rules of arithmetic are not axioms. They are consequences of bra-ket structure.
+- Positive × Positive = Positive (bra × bra = bra)
+- Negative × Negative = Positive (ket × ket = bra!)
+- Positive × Negative = Negative (bra × ket = ket)
+- Negative × Positive = Negative (ket × bra = ket)
 
-A negative times a negative is positive because two kets multiply to a bra.
+The rule "negative times negative equals positive" is not an axiom someone invented. **It follows from the structure of types.**
 
-### Division
+Two negatives are the same type. Same types combine to positive.
 
-Division is multiplication by the inverse. The inverse of `⟨a|b⟩` is `⟨b|a⟩`.
+### Division: Inverting the Measurement
+
+To divide, you swap roles and multiply:
 
 ```
 ⟨a|b⟩ ÷ ⟨c|d⟩ = ⟨a|b⟩ × ⟨d|c⟩
 ```
 
-Division by zero (`⟨0|0⟩`) has no inverse. This is not an arbitrary rule — the structure makes it impossible.
+The inverse of `⟨c|d⟩` is `⟨d|c⟩` — swap standard and measured.
+
+**Division is multiplication with roles reversed.**
+
+What about division by zero? `⟨0|0⟩` has no inverse because swapping it gives `⟨0|0⟩` again. It's self-matching. You can't invert something that yanks itself.
+
+---
+
+## The Deeper Point
+
+Notice what we've done:
+
+We started with:
+- Two types of containers (bra, ket)
+- One way to combine (put them together)
+- One rule (matching labels collapse)
+
+From this alone, we derived:
+- Positive numbers
+- Negative numbers  
+- Zero
+- Addition
+- Subtraction
+- Multiplication (with sign rules emerging automatically)
+- Division (with division-by-zero being impossible automatically)
+
+**We didn't assume arithmetic. It emerged from the grammar.**
 
 ---
 
 ## Emergence: Linear Algebra
 
-### Vectors
+### Vectors and Covectors: The Same Pattern
 
-A vector is a ket: `|v⟩`.
+A vector is just a ket: `|v⟩`. It's "a thing" — a point in space, a state, a value.
 
-Its components are coefficients in a basis expansion:
+A covector is just a bra: `⟨w|`. It's "a test" — a measurement, a function, a probe.
 
-```
-|v⟩ = v₁|e₁⟩ + v₂|e₂⟩ + ... = Σᵢ vᵢ|eᵢ⟩
-```
+**Nothing new here. We're just using different names for the same building blocks.**
 
-### Covectors
+### Inner Product: Testing a Thing
 
-A covector (linear functional) is a bra: `⟨w|`.
-
-It acts on vectors by juxtaposition:
+When you put a covector next to a vector:
 
 ```
-⟨w|v⟩ = scalar
+⟨w|v⟩
 ```
 
-### Inner Product
+You're testing the vector `v` with the covector `w`. The result is a number — a scalar.
 
-The inner product IS the bra-ket contraction:
+If `w` and `v` match perfectly (same "shape"), you get the maximum value. If they're orthogonal (completely different shapes), you get zero.
 
-```
-⟨v|w⟩ = Σᵢ vᵢ* wᵢ
-```
+**The inner product is just our bra-ket juxtaposition. The output tells you how well the test fits the thing.**
 
-When `v = w`, this gives the squared norm.
+### Outer Product: Making an Operator
 
-### Outer Product
-
-The outer product creates an operator:
+When you put a vector next to a covector — in the opposite order:
 
 ```
-|v⟩⟨w| = operator
+|v⟩⟨w|
 ```
 
-### Matrix Multiplication
+You create something new: an operator. This is a machine that transforms things.
 
-A matrix is a sum of outer products:
-
-```
-M = Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|
-```
-
-Matrix-vector multiplication:
+Feed it a vector `|x⟩`:
 
 ```
-M|x⟩ = (Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|)|x⟩ = Σᵢⱼ mᵢⱼ xⱼ |eᵢ⟩
+|v⟩⟨w|  |x⟩  →  |v⟩⟨w|x⟩  →  |v⟩ × (some number)
 ```
 
-### Trace
+The operator `|v⟩⟨w|` tests `x` with `w`, gets a number, and multiplies `v` by that number.
 
-The trace is the sum of diagonal elements. In bra-ket:
+**An operator is made of two halves: a thing to become (the ket) and a test to apply (the bra).**
+
+### Matrices: Collections of Operators
+
+A matrix is just a sum of outer products:
 
 ```
-Tr(M) = Σᵢ ⟨eᵢ|M|eᵢ⟩
+M = m₁₁|e₁⟩⟨e₁| + m₁₂|e₁⟩⟨e₂| + m₂₁|e₂⟩⟨e₁| + m₂₂|e₂⟩⟨e₂|
 ```
 
-This is a contraction — exactly the yanking operation.
+Each term says: "become vector `e₁`, test with `e₂`, weight by `m₁₂`."
+
+**A matrix is a collection of "become this, test that" instructions.**
+
+### Trace: The Self-Test
+
+The trace of a matrix is the sum of diagonal elements. In bra-ket:
+
+```
+Tr(M) = ⟨e₁|M|e₁⟩ + ⟨e₂|M|e₂⟩ + ...
+```
+
+Each term `⟨eᵢ|M|eᵢ⟩` means: "transform `eᵢ` by M, then test the result with `eᵢ`."
+
+You're checking how much `eᵢ` stays `eᵢ` after transformation. The trace measures "self-agreement."
+
+**The trace is self-testing. It's the sum of self-matching — which is exactly yanking.**
 
 ---
 
 ## Emergence: Tensor Calculus
 
-### Tensor Product
+### Tensor Product: Putting Things Together
 
-Juxtaposition IS the tensor product:
-
-```
-|a⟩ ⊗ |b⟩ = |a⟩|b⟩
-```
-
-### Contraction
-
-The yanking rule IS Einstein summation:
+The tensor product is just juxtaposition again:
 
 ```
-⟨i|i⟩ → ─    (sum over i)
+|a⟩|b⟩ = |a⟩ ⊗ |b⟩
 ```
 
-A repeated index (one upper, one lower) is contracted.
+When you have two things and you put them next to each other, you have a pair. That's all a tensor is — a structured collection of things.
 
-### Index Notation
+**Rank** is just counting how many things you have:
+- Just a ket: rank-1, contravariant (one "thing")
+- Just a bra: rank-1, covariant (one "test")
+- Ket then bra: rank-2, mixed (one thing, one test)
 
-| Object | Bra-Ket | Index Form |
-|--------|---------|------------|
-| Vector | \|v⟩ | vⁱ |
-| Covector | ⟨v\| | vᵢ |
-| Inner product | ⟨v\|w⟩ | vᵢwⁱ |
-| Outer product | \|v⟩⟨w\| | vⁱwⱼ |
-| Trace | Σᵢ⟨eᵢ\|M\|eᵢ⟩ | Mⁱᵢ |
+### Contraction: The Universal Operation
 
-**The correspondence is exact.** Dirac notation and index notation are the same structure.
+Here's where everything connects. When you have a bra and ket with matching indices:
+
+```
+⟨i|  |i⟩  →  sum over i
+```
+
+This is **Einstein summation**: a repeated index (one upper, one lower) is summed over.
+
+But wait — that's exactly our yanking rule! When labels match, you "collapse" them.
+
+**Einstein summation IS yanking.** The physicist's "contract over index i" is the same operation as the grammar's "collapse matching labels."
+
+The sum `Σᵢ ⟨aᵢ|bᵢ⟩` is just "test each `b` with each matching `a`, and sum the results."
 
 ---
 
 ## Emergence: Quantum Mechanics
 
-### State Vectors
+### States and Observables: Things and Tests Again
 
-A quantum state is a ket: `|ψ⟩`.
+A quantum state is a ket: `|ψ⟩`. It's "what the system is."
 
-### Observables
+An observable is an operator: `Ô`. It's built from bras and kets: `Ô = Σₙ oₙ |oₙ⟩⟨oₙ|`.
 
-An observable is an operator: `Ô = Σₙ oₙ |oₙ⟩⟨oₙ|`.
+Each term says: "eigenvalue `oₙ`, eigenstate `|oₙ⟩`."
 
-### Measurement
+**An observable is a collection of "states to look for" and "values to report."**
 
-Measurement projects onto eigenstates:
+### Measurement: The Test Happens
+
+When you measure `|ψ⟩` with observable `Ô`:
 
 ```
-⟨oₙ|ψ⟩ = amplitude for outcome oₙ
-|⟨oₙ|ψ⟩|² = probability
+⟨oₙ|ψ⟩  =  amplitude for finding eigenstate |oₙ⟩
+|⟨oₙ|ψ⟩|² =  probability of that outcome
 ```
 
-### Wavefunction Collapse
+You're testing the state with each bra `⟨oₙ|`. The inner product tells you the match quality.
 
-After measurement:
+### Collapse: The Yanking Happens
+
+After measurement, the state becomes the eigenstate you found:
 
 ```
 |ψ⟩ → |oₙ⟩
 ```
 
-The state "yanks" to the observed eigenstate.
+The state "yanks" to match the observation.
 
-### The Born Rule
+**Quantum collapse is the yanking rule in action.** The measurement bra finds a matching ket, and the distinction vanishes.
 
-Probability is `|⟨a|b⟩|²`. This is the squared magnitude of the bra-ket contraction.
+### The Born Rule: Why Probability Is Squared
+
+The probability is `|⟨oₙ|ψ⟩|²`. Why squared?
+
+The inner product `⟨oₙ|ψ⟩` can be complex — it has a magnitude and a phase. The magnitude tells you the match strength. Squaring it gives you a real, positive probability.
+
+But the inner product itself is just the bra-ket pairing. We're not adding anything new.
+
+**Quantum mechanics uses the same bra-ket structure as arithmetic and linear algebra. The only new element is squaring for probability — everything else is already there.**
 
 ---
 
 ## Emergence: Representation Theory
 
-### Groups
+### Groups: Symmetry Structures
 
-A group is a set with an associative binary operation, identity, and inverses.
+A group is a set of transformations that preserve something. Rotations of a square. Permutations of a list. Symmetries of a shape.
 
-### Representations
+Groups are abstract — they describe structure, not content.
 
-A representation ρ maps group elements to operators:
+### Representations: Making Symmetry Concrete
+
+A representation makes a group concrete by mapping each abstract transformation to an actual operator:
 
 ```
-ρ: G → GL(V)
-g ↦ Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|
+ρ: G → Operators
+g ↦ ρ(g) = Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|
 ```
 
-Each ρ(g) is a bra-ket operator.
+Each group element `g` becomes a bra-ket operator.
 
-### Characters
+**A representation is a collection of operators, one per group element, that respect the group structure.**
 
-The character is the trace:
+### Characters: Measuring Representations
+
+How do you compare two representations? You compute their characters.
+
+The character at element `g` is:
 
 ```
 χ(g) = Tr(ρ(g)) = Σᵢ ⟨eᵢ|ρ(g)|eᵢ⟩
 ```
 
-**This is the yanking operation applied to a representation.**
+This is the trace — the self-test sum. It measures how much each basis vector stays itself under the transformation.
 
-### Irreducible Representations
+**Characters are computed by yanking.** The trace is a sum of self-matching operations.
 
-A representation is irreducible if it cannot be decomposed into smaller blocks.
+### Why Characters Matter
 
-In bra-ket: the operator cannot be written as a direct sum of operators on orthogonal subspaces.
+Characters determine representations up to isomorphism. Two representations with the same character table are essentially the same.
+
+**The trace (yanking sum) captures everything essential about a symmetry structure.**
 
 ---
 
 ## Emergence: L-Functions
 
-### Local L-Factor
+### From Representations to Functions
 
-For a representation ρ and prime p:
+Given a representation, you can build a function — an L-function — that encodes its structure.
+
+The local L-factor at a prime `p` is:
 
 ```
-Lₚ(s, ρ) = det(I - p^{-s} ρ(Frobₚ))^{-1}
+Lₚ(s, ρ) = 1 / det(I - p^{-s} ρ(Frobₚ))
 ```
 
-This is a product over eigenvalues of ρ(Frobₚ).
+This looks complicated, but it's saying something simple: "take the eigenvalues of the representation at prime `p`, and build a product from them."
 
-### Global L-Function
+### The Euler Product
+
+The full L-function is the product over all primes:
 
 ```
 L(s, ρ) = ∏ₚ Lₚ(s, ρ)
 ```
 
-### The Riemann Zeta
+Each prime contributes a factor. The infinite product encodes the representation across all primes.
 
-For the trivial 1-dimensional representation:
+### The Riemann Zeta: The Simplest L-Function
+
+For the trivial representation (where every group element maps to the identity), the L-function becomes:
 
 ```
 ζ(s) = ∏ₚ 1/(1 - p^{-s})
 ```
 
-The Riemann zeta function is the L-function of the identity representation.
+This is the **Riemann zeta function** — the most famous L-function.
 
-**The Riemann Hypothesis is a statement about the zeros of this bra-ket-derived function.**
+**The Riemann zeta is the L-function of the identity representation. The Riemann Hypothesis is a statement about where this function's zeros lie.**
+
+### The Point
+
+L-functions are built from:
+- Representations (collections of bra-ket operators)
+- Eigenvalues (outputs of the self-test trace)
+- Euler products (multiplying over primes)
+
+Everything traces back to bras, kets, and the yanking operation.
 
 ---
 
 ## Emergence: The Langlands Program
 
-The Langlands Program conjectures a correspondence between:
+### The Grand Correspondence
 
-| Number Theory | Representation Theory |
-|---------------|----------------------|
-| Galois representations | Automorphic representations |
-| ρ: Gal(K̄/K) → GLₙ | π on GLₙ(A) |
-| L(s, ρ) | L(s, π) |
+The Langlands Program proposes a deep connection between two seemingly unrelated worlds:
 
-**Both sides are constructed from bra-ket operators.**
+| Number Theory Side | Representation Theory Side |
+|--------------------|---------------------------|
+| Galois groups | Lie groups like GL(n) |
+| Galois representations | Automorphic forms |
+| Arithmetic L-functions | Automorphic L-functions |
 
-- Galois representation: maps field automorphisms to operators
-- Automorphic representation: functions on adelic groups with operator coefficients
+### What the Correspondence Says
 
-The correspondence asserts that certain bra-ket structures on one side match bra-ket structures on the other.
+For certain representations of the Galois group (which describes symmetries of number fields), there should exist matching automorphic forms (functions with special symmetry properties).
+
+The matching is precise: they have the **same L-function**.
+
+```
+L(s, ρ_galois) = L(s, π_automorphic)
+```
+
+### Why This Is Bra-Ket
+
+Both sides are constructed from bra-ket structures:
+
+- **Galois representation**: each field automorphism becomes an operator `Σ |v⟩⟨w|`
+- **Automorphic form**: a function with operator-valued coefficients
+
+The L-functions on both sides are built from traces (yanking sums) of these operators.
+
+**The Langlands correspondence maps bra-ket structures on one side to bra-ket structures on the other, preserving the yanking-derived quantities (L-functions).**
 
 ---
 
 ## The Unified Table
 
-| Field | Object | Bra-Ket Form | Yanking Role |
-|-------|--------|--------------|--------------|
-| Arithmetic | Integer | ⟨p\|n⟩ | ⟨n\|n⟩ = 0 |
-| Arithmetic | Product | \|a⟩⟨b\| × \|c⟩⟨d\| | Contraction |
-| Linear algebra | Vector | \|v⟩ | — |
-| Linear algebra | Covector | ⟨v\| | — |
-| Linear algebra | Inner product | ⟨v\|w⟩ | Scalar output |
-| Linear algebra | Matrix | Σ \|eᵢ⟩⟨eⱼ\| | — |
-| Linear algebra | Trace | Σ ⟨eᵢ\|M\|eᵢ⟩ | Sum diagonal |
-| Tensors | Rank-(p,q) | p kets, q bras | Contract indices |
-| Quantum | State | \|ψ⟩ | — |
-| Quantum | Observable | Ô | — |
-| Quantum | Probability | \|⟨o\|ψ⟩\|² | Collapse |
-| Rep. theory | Representation | ρ(g) = Σ \|v⟩⟨w\| | — |
-| Rep. theory | Character | Tr(ρ(g)) | Σ ⟨eᵢ\|ρ(g)\|eᵢ⟩ |
-| L-functions | Local factor | det(I - p^{-s}ρ) | Eigenvalues |
-| Langlands | Correspondence | \|σ⟩⟨σ\| ↔ \|π⟩⟨π\| | L(s,ρ) = L(s,π) |
+Here's the complete picture. Every field uses the same structure:
 
----
+| Field | What's the ket? | What's the bra? | What's yanking? |
+|-------|-----------------|-----------------|-----------------|
+| Arithmetic | A value | A standard | Zero (self-match) |
+| Linear algebra | Vector | Covector | Inner product |
+| Tensors | Contravariant index | Covariant index | Contraction |
+| Quantum | State | Observable bra | Collapse |
+| Rep. theory | Basis vector | Dual vector | Character (trace) |
+| L-functions | — | — | Sum of eigenvalues |
+| Langlands | Automorphic form | — | L-function matching |
 
-## The Point
-
-There is one structure. It has two atomic types (bra, ket) and one composition (juxtaposition). There is one rewrite rule (yanking).
-
-From this:
-
-1. **Numbers arise** — integers as bra-ket pairs, rationals as nested pairs
-2. **Arithmetic arises** — signs and operations from structural properties
-3. **Linear algebra arises** — vectors, matrices, inner/outer products
-4. **Tensors arise** — multi-index objects with contraction
-5. **Quantum mechanics arises** — states, operators, measurements
-6. **Representation theory arises** — group actions as operators
-7. **L-functions arise** — Euler products over representation data
-8. **The Langlands correspondence arises** — matching bra-ket structures
-
-**These are not analogies.** They are the same structure viewed at different levels of abstraction.
-
----
-
-## Why This Matters
-
-### For Mathematics
-
-Unification reveals hidden connections. The Langlands Program is profound because it connects number theory to representation theory. Here we see both sides emerge from the same primitive operations.
-
-### For Physics
-
-Quantum mechanics is built on Dirac notation. This notation is not a convenience — it reveals the underlying structure. States, operators, and measurements are bra-ket constructs.
-
-### For Understanding
-
-When disparate fields share the same foundation, learning one illuminates the others. Understanding yanking in arithmetic helps understand contraction in tensor calculus helps understand trace in representation theory.
-
----
-
-## The Demonstration
-
-```
-python3 spinor.py --demo      # The fundamental rule
-python3 integers.py --demo    # Integers emerge
-python3 multiply.py --demo    # Signs emerge from structure
-python3 divide.py --demo      # Rationals emerge
-python3 tensor.py --demo      # Tensor calculus = bra-ket
-python3 langlands.py --demo   # Langlands lives in bra-ket
-```
+**Same grammar. Same rule. Different names.**
 
 ---
 
 ## Summary
 
-**One grammar:** `|x⟩`, `⟨x|`, and juxtaposition.
+### What We Started With
 
-**One rule:** `⟨x|x⟩ → ─`.
+**Two containers:** A box (ket) and a mold (bra). Labels tell you what's inside or what fits.
 
-**All of mathematics follows.**
+**One combination:** Put them next to each other.
 
-The structure is simple. The implications are vast. The unity is real.
+**One rule:** When labels match, the pair collapses into neutrality.
+
+```
+⟨x|x⟩ → ─
+```
+
+### What Emerged
+
+From this minimal foundation, we watched the following arise:
+
+| Level | Emerged Structure | How It Emerges |
+|-------|-------------------|----------------|
+| 1 | **Numbers** | A measurement is a bra-ket pair |
+| 2 | **Arithmetic** | Signs come from type combinations |
+| 3 | **Linear algebra** | Vectors and covectors are kets and bras |
+| 4 | **Tensors** | Stacking and contracting via yanking |
+| 5 | **Quantum mechanics** | States, operators, collapse |
+| 6 | **Representations** | Symmetry as operators |
+| 7 | **L-functions** | Euler products over operator eigenvalues |
+| 8 | **Langlands** | Matching bra-ket structures across fields |
+
+### Why This Is Not Analogy
+
+These aren't metaphors. Each field genuinely constructs its objects from bras and kets:
+
+- When a physicist writes `|ψ⟩`, they're using a ket
+- When a mathematician writes `⟨v,w⟩`, they're using a bra-ket pair
+- When a number theorist writes `L(s,ρ)`, they're computing over representation traces
+
+**The notation was never arbitrary. Dirac didn't invent bra-ket for convenience — he discovered the underlying structure.**
+
+### The One Operation
+
+Across all fields, one operation appears repeatedly under different names:
+
+| Field | Name | What It Does |
+|-------|------|--------------|
+| Arithmetic | "Self-match" | Gives zero |
+| Tensors | "Contraction" | Sums over index |
+| Linear algebra | "Trace" | Sums diagonal |
+| Quantum | "Collapse" | Projects to eigenstate |
+| Rep. theory | "Character" | Measures symmetry |
+
+**All are yanking. All are `⟨x|x⟩ → ─`.**
+
+---
+
+## How to Explore
+
+Run the demonstrations:
+
+```bash
+python3 spinor.py --demo      # The fundamental grammar and rule
+python3 integers.py --demo    # Numbers from bra-ket pairs
+python3 multiply.py --demo    # Signs emerge from structure
+python3 divide.py --demo      # Division and rationals
+python3 tensor.py --demo      # Tensors = Dirac notation
+python3 langlands.py --demo   # Langlands in bra-ket terms
+```
+
+---
+
+## The Point Stated Plainly
+
+**One grammar. One rule. All of mathematics.**
+
+We didn't assume numbers. We derived them.
+
+We didn't assume sign rules. They emerged from type structure.
+
+We didn't assume quantum mechanics. It's the same structure applied to physical systems.
+
+The unity is not philosophical speculation. It is demonstrated.
 
 ---
 
 ## References
 
-1. Dirac, P.A.M. (1939). *A New Notation for Quantum Mechanics.*
-2. Grothendieck, A. (1950s). *Récoltes et Semailles* (on the Grothendieck construction).
-3. Langlands, R. (1967). *Letter to Weil* (the Langlands Program).
-4. Coecke, B. & Kissinger, A. (2017). *Picturing Quantum Processes* (categorical quantum mechanics).
+1. Dirac, P.A.M. (1939). *A New Notation for Quantum Mechanics* — the original bra-ket notation
+2. Grothendieck, A. — the construction of integers from pairs
+3. Langlands, R. (1967). *Letter to Weil* — the original Langlands conjectures
+4. Coecke, B. & Kissinger, A. (2017). *Picturing Quantum Processes* — categorical quantum mechanics
 
 ---
 
-*The structure exists whether we name it or not. The notation reveals what was always there.*
+*The structure is simple. The implications span mathematics. The unity is real.*
