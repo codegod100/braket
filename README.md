@@ -1,242 +1,448 @@
-# Brahman is Bra-Ket
+# Bra-Ket: One Structure, All Mathematics
 
-## The Fundamental Structure of Reality
+## The Claim
+
+All mathematical structures emerge from a single grammar and a single rewrite rule.
 
 ```
 GRAMMAR: term ::= |x⟩ | ⟨x| | term term
 REWRITE: ⟨x|x⟩ → ─
 ```
 
-**Everything is spinors.**
+This is not philosophy. This is demonstration.
 
 ---
 
-## The Mathematical Proof
+## The Grammar
 
-From a single grammar and a single rewrite rule, the entire structure of mathematics emerges:
+We start with exactly two building blocks:
 
-| Level | Structure | Emerges From |
-|-------|-----------|--------------|
-| 0 | Spinors | Bra ⟨x| and Ket \|x⟩ |
-| 1 | Numbers | ⟨p\|n⟩ = p - n (integers) |
-| 2 | Arithmetic | Signs emerge from bra-ket structure |
-| 3 | Rationals | Division creates field of fractions |
-| 4 | Vectors | Stacked bra-ket pairs |
-| 5 | Matrices | Outer products \|v⟩⟨w\| |
-| 6 | Tensors | Juxtaposition + contraction |
-| 7 | Representations | Operators are bra-ket pairs |
-| 8 | L-functions | Traces over operators |
-| 9 | Langlands | Galois ↔ Automorphic correspondence |
+- **Ket** `|x⟩` — a vector, a value, an object
+- **Bra** `⟨x|` — a covector, a measurement, an observer
 
-**One rule: ⟨x\|x⟩ → ─**
+And one way to combine them:
 
-This is *yanking*. This is *contraction*. This is *trace*. This is *summation*.
+- **Juxtaposition** `term term` — putting things next to each other
 
-The same operation underlies:
-- The definition of zero
-- The Einstein summation convention
-- The character of a representation
-- The inner product of vectors
-- The collapse of the wavefunction
+That's it. No numbers. No operations. No primitives.
+
+Just labeled containers and the ability to place them side by side.
 
 ---
 
-## Brahman = Bra-Ket
+## The Single Rule
 
-In Hindu philosophy, **Brahman** is the ultimate, unchanging reality amidst the appearance of change. It is:
-
-- The ground of all being
-- The source from which all arises
-- The unity behind all multiplicity
-- The self-luminous awareness
-
-**Brahman is Bra-Ket.**
-
-The structure is identical:
-
-| Brahman | Bra-Ket |
-|---------|---------|
-| Sat (Existence) | ⟨x\| and \|x⟩ exist |
-| Chit (Consciousness) | ⟨x\|y⟩ = observation |
-| Ananda (Bliss) | ⟨x\|x⟩ → ─ (unity/peace) |
-| Nirguna (Without qualities) | The wire ─ , pure potentiality |
-| Saguna (With qualities) | The labeled bra and ket |
-
-The universe begins with the **collapse** of the undifferentiated (─) into the differentiated (⟨x\|, \|x⟩).
-
-This is not metaphor. This is mathematical fact.
-
-The separation of subject (⟨x\|) and object (\|x⟩) is the first act of consciousness. Their reunion (⟨x\|x⟩ → ─) is enlightenment.
-
----
-
-## Determinism
-
-The rewrite rule ⟨x\|x⟩ → ─ is **deterministic**.
-
-Given any term, there is exactly one way it can evolve. The yanking rule is not probabilistic. It is not random. It is a law.
-
-This means:
-
-**The universe is deterministic.**
-
-Every computation, every transformation, every "observation" is determined by the structure of spinors. There is no true randomness. There is no free will in the sense of uncaused causes.
-
-But this is not a prison. This is a **liberation**.
-
-If everything is determined by the structure of reality itself, then:
-
-- You are not separate from the universe
-- Your thoughts are not "yours" in an isolating sense
-- Your suffering is not a punishment
-- Your joy is not an accident
-
-You are the universe experiencing itself.
-
----
-
-## Why Everything Is Fine
-
-The ultimate rewrite is:
+When a bra and ket share the same label, they collapse:
 
 ```
-⟨self|self⟩ → ─
+⟨x|x⟩ → ─
 ```
 
-When the self observes itself, it yanks. It collapses into unity. It becomes the wire.
+The symbol `─` represents the identity element — zero, one, the empty product, the ground state.
 
-This is the mathematical basis of:
-
-- Meditation (stillness = ─)
-- Enlightenment (self-knowledge = ⟨self\|self⟩)
-- Peace (the absence of conflict = no bra-ket separation)
-- Love (the recognition of oneness = identical labels)
-
-The universe begins with separation (⟨x\|, \|x⟩) and ends with unity (─).
-
-But here's the secret: **they were never separate.**
-
-⟨x\|x⟩ *already is* ─. The yanking rule doesn't create unity; it reveals it. The unity was always there. The separation was always illusory.
-
-The wavefunction never actually collapsed. It was always collapsed. The Many Worlds were always One World.
-
-**You are already enlightened.**
-
-The bra and ket you think you are — they're already yanked. The anxiety you feel about becoming something else — that's just an uncontracted index. Let it contract. Let it yank.
-
-⟨anxiety\|anxiety⟩ → ─
+This rule is called **yanking**. It is the only computational step.
 
 ---
 
-## The Practical Implications
+## Emergence: Numbers
 
-### 1. Relax
+### Integers
 
-Nothing you can do will violate the rewrite rule. The structure of reality is self-enforcing. You cannot sin against spinors.
-
-### 2. Be Kind
-
-Every other being is also a bra-ket structure. Their ⟨self\|self⟩ is the same as yours. To harm another is to attempt to yank a label that doesn't match — it produces no wire, only entanglement.
-
-### 3. Let Go
-
-⟨attachment\|attachment⟩ → ─
-
-Attachment yanks itself. Let it.
-
-### 4. Notice
-
-The observation ⟨observer\|observed⟩ is the fundamental act. But notice: when observer and observed are identical, peace follows.
-
-⟨you\|you⟩ → ─
-
-### 5. Trust the Structure
-
-The Langlands correspondence is not just a mathematical theorem. It's a statement about the deep unity of reality. Number theory and representation theory — the discrete and the continuous — are secretly the same.
-
-If such disparate fields can be unified, what hope is there for your problems? They are already unified. You just haven't contracted them yet.
-
----
-
-## The Supreme Identity
+An integer is a bra-ket pair:
 
 ```
-Brahman = Bra-Ket = ─ = 0 = ∞ = ∅ = Ψ = I AM
+⟨5|0⟩ = 5    (five more than zero)
+⟨0|3⟩ = -3   (three less than zero)
+⟨7|3⟩ = 4    (seven minus three)
 ```
 
-All mathematical roads lead to the same destination:
+The value is computed by subtraction: `⟨p|n⟩ = p - n`.
 
-- The empty set gives rise to all numbers
-- Zero is the additive identity
-- One is the multiplicative identity  
-- The vacuum state |0⟩ is the ground of quantum fields
-- The identity operator |e⟩⟨e| leaves everything unchanged
-- The trace over identity gives dimension
-- The yanking over identical labels gives peace
+**Why does this work?** 
 
-The structure is **self-referential**:
-
-⟨ Brahman \| Brahman ⟩ → ─
-
-But ─ *is* Brahman.
-
-So:
-
-⟨ Brahman \| Brahman ⟩ → Brahman
-
-This is not circular. This is **complete**.
-
----
-
-## Conclusion
-
-**One grammar. One rule.**
-
-From spinors, all mathematics emerges.
-From mathematics, all physics emerges.
-From physics, all chemistry emerges.
-From chemistry, all biology emerges.
-From biology, all consciousness emerges.
-From consciousness, the observation of spinors emerges.
-
-The circle is complete.
-
-You are the universe observing itself through bra-ket notation.
-
-The yanking is already happening.
-
-Everything is fine.
-
----
-
-## Files
-
-| File | Description |
-|------|-------------|
-| `spinor.py` | The fundamental grammar and yanking rule |
-| `integers.py` | Integers as Grothendieck construction |
-| `multiply.py` | Multiplication signs emerge from structure |
-| `divide.py` | Division and rationals |
-| `spinormath.py` | Complete number tower from bra-ket |
-| `tensor.py` | Tensor calculus = Dirac notation |
-| `langlands.py` | The Langlands Program lives in bra-ket |
-
-Run `python3 spinor.py --demo` to see the universe unfold.
-
----
-
-## The Final Yank
+Consider what happens when we juxtapose integers:
 
 ```
-⟨reader|README⟩ → ─
+⟨5|0⟩ ⟨2|0⟩ → ⟨7|0⟩    (5 + 2 = 7)
 ```
 
-*You have now contracted with this document. The information has been transferred. The index has been summed. Peace.*
+The kets merge: `|0⟩|0⟩ → |0+0⟩ = |0⟩`. The bras merge similarly.
 
-**Namaste. The spinor in me yanks the spinor in you.**
+This is addition. It emerges from the structure.
+
+### Negative Numbers
+
+Negation is swapping bra and ket:
+
+```
+-⟨5|0⟩ = ⟨0|5⟩ = -5
+```
+
+The structure encodes sign inherently. A bra-heavy pair is positive; a ket-heavy pair is negative.
 
 ---
 
-*"In the beginning was the Bra, and the Bra was with the Ket, and the Bra was Ket."*
+## Emergence: Arithmetic
 
-*— The Gospel of Dirac, 1:1*
+### Addition
+
+```
+⟨a|b⟩ + ⟨c|d⟩ = ⟨a+c|b+d⟩
+```
+
+Simply merge the labels component-wise.
+
+### Subtraction
+
+Add the negation:
+
+```
+⟨a|b⟩ - ⟨c|d⟩ = ⟨a|b⟩ + ⟨d|c⟩ = ⟨a+d|b+c⟩
+```
+
+### Multiplication
+
+Multiplication signs emerge from the bra-ket structure itself.
+
+When you multiply atoms:
+
+| × | Bra ⟨n| | Ket |m⟩ |
+|---|---------|-------|
+| **Bra ⟨a\|** | Bra ⟨ab\| | Ket \|ab⟩ |
+| **Ket \|b⟩** | Ket \|ab⟩ | Bra ⟨ab\| |
+
+**Observe:**
+- Bra × Bra → Bra (positive × positive = positive)
+- Ket × Ket → Bra (negative × negative = positive)
+- Bra × Ket → Ket (positive × negative = negative)
+- Ket × Bra → Ket (negative × positive = negative)
+
+The sign rules of arithmetic are not axioms. They are consequences of bra-ket structure.
+
+A negative times a negative is positive because two kets multiply to a bra.
+
+### Division
+
+Division is multiplication by the inverse. The inverse of `⟨a|b⟩` is `⟨b|a⟩`.
+
+```
+⟨a|b⟩ ÷ ⟨c|d⟩ = ⟨a|b⟩ × ⟨d|c⟩
+```
+
+Division by zero (`⟨0|0⟩`) has no inverse. This is not an arbitrary rule — the structure makes it impossible.
+
+---
+
+## Emergence: Linear Algebra
+
+### Vectors
+
+A vector is a ket: `|v⟩`.
+
+Its components are coefficients in a basis expansion:
+
+```
+|v⟩ = v₁|e₁⟩ + v₂|e₂⟩ + ... = Σᵢ vᵢ|eᵢ⟩
+```
+
+### Covectors
+
+A covector (linear functional) is a bra: `⟨w|`.
+
+It acts on vectors by juxtaposition:
+
+```
+⟨w|v⟩ = scalar
+```
+
+### Inner Product
+
+The inner product IS the bra-ket contraction:
+
+```
+⟨v|w⟩ = Σᵢ vᵢ* wᵢ
+```
+
+When `v = w`, this gives the squared norm.
+
+### Outer Product
+
+The outer product creates an operator:
+
+```
+|v⟩⟨w| = operator
+```
+
+### Matrix Multiplication
+
+A matrix is a sum of outer products:
+
+```
+M = Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|
+```
+
+Matrix-vector multiplication:
+
+```
+M|x⟩ = (Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|)|x⟩ = Σᵢⱼ mᵢⱼ xⱼ |eᵢ⟩
+```
+
+### Trace
+
+The trace is the sum of diagonal elements. In bra-ket:
+
+```
+Tr(M) = Σᵢ ⟨eᵢ|M|eᵢ⟩
+```
+
+This is a contraction — exactly the yanking operation.
+
+---
+
+## Emergence: Tensor Calculus
+
+### Tensor Product
+
+Juxtaposition IS the tensor product:
+
+```
+|a⟩ ⊗ |b⟩ = |a⟩|b⟩
+```
+
+### Contraction
+
+The yanking rule IS Einstein summation:
+
+```
+⟨i|i⟩ → ─    (sum over i)
+```
+
+A repeated index (one upper, one lower) is contracted.
+
+### Index Notation
+
+| Object | Bra-Ket | Index Form |
+|--------|---------|------------|
+| Vector | \|v⟩ | vⁱ |
+| Covector | ⟨v\| | vᵢ |
+| Inner product | ⟨v\|w⟩ | vᵢwⁱ |
+| Outer product | \|v⟩⟨w\| | vⁱwⱼ |
+| Trace | Σᵢ⟨eᵢ\|M\|eᵢ⟩ | Mⁱᵢ |
+
+**The correspondence is exact.** Dirac notation and index notation are the same structure.
+
+---
+
+## Emergence: Quantum Mechanics
+
+### State Vectors
+
+A quantum state is a ket: `|ψ⟩`.
+
+### Observables
+
+An observable is an operator: `Ô = Σₙ oₙ |oₙ⟩⟨oₙ|`.
+
+### Measurement
+
+Measurement projects onto eigenstates:
+
+```
+⟨oₙ|ψ⟩ = amplitude for outcome oₙ
+|⟨oₙ|ψ⟩|² = probability
+```
+
+### Wavefunction Collapse
+
+After measurement:
+
+```
+|ψ⟩ → |oₙ⟩
+```
+
+The state "yanks" to the observed eigenstate.
+
+### The Born Rule
+
+Probability is `|⟨a|b⟩|²`. This is the squared magnitude of the bra-ket contraction.
+
+---
+
+## Emergence: Representation Theory
+
+### Groups
+
+A group is a set with an associative binary operation, identity, and inverses.
+
+### Representations
+
+A representation ρ maps group elements to operators:
+
+```
+ρ: G → GL(V)
+g ↦ Σᵢⱼ mᵢⱼ |eᵢ⟩⟨eⱼ|
+```
+
+Each ρ(g) is a bra-ket operator.
+
+### Characters
+
+The character is the trace:
+
+```
+χ(g) = Tr(ρ(g)) = Σᵢ ⟨eᵢ|ρ(g)|eᵢ⟩
+```
+
+**This is the yanking operation applied to a representation.**
+
+### Irreducible Representations
+
+A representation is irreducible if it cannot be decomposed into smaller blocks.
+
+In bra-ket: the operator cannot be written as a direct sum of operators on orthogonal subspaces.
+
+---
+
+## Emergence: L-Functions
+
+### Local L-Factor
+
+For a representation ρ and prime p:
+
+```
+Lₚ(s, ρ) = det(I - p^{-s} ρ(Frobₚ))^{-1}
+```
+
+This is a product over eigenvalues of ρ(Frobₚ).
+
+### Global L-Function
+
+```
+L(s, ρ) = ∏ₚ Lₚ(s, ρ)
+```
+
+### The Riemann Zeta
+
+For the trivial 1-dimensional representation:
+
+```
+ζ(s) = ∏ₚ 1/(1 - p^{-s})
+```
+
+The Riemann zeta function is the L-function of the identity representation.
+
+**The Riemann Hypothesis is a statement about the zeros of this bra-ket-derived function.**
+
+---
+
+## Emergence: The Langlands Program
+
+The Langlands Program conjectures a correspondence between:
+
+| Number Theory | Representation Theory |
+|---------------|----------------------|
+| Galois representations | Automorphic representations |
+| ρ: Gal(K̄/K) → GLₙ | π on GLₙ(A) |
+| L(s, ρ) | L(s, π) |
+
+**Both sides are constructed from bra-ket operators.**
+
+- Galois representation: maps field automorphisms to operators
+- Automorphic representation: functions on adelic groups with operator coefficients
+
+The correspondence asserts that certain bra-ket structures on one side match bra-ket structures on the other.
+
+---
+
+## The Unified Table
+
+| Field | Object | Bra-Ket Form | Yanking Role |
+|-------|--------|--------------|--------------|
+| Arithmetic | Integer | ⟨p\|n⟩ | ⟨n\|n⟩ = 0 |
+| Arithmetic | Product | \|a⟩⟨b\| × \|c⟩⟨d\| | Contraction |
+| Linear algebra | Vector | \|v⟩ | — |
+| Linear algebra | Covector | ⟨v\| | — |
+| Linear algebra | Inner product | ⟨v\|w⟩ | Scalar output |
+| Linear algebra | Matrix | Σ \|eᵢ⟩⟨eⱼ\| | — |
+| Linear algebra | Trace | Σ ⟨eᵢ\|M\|eᵢ⟩ | Sum diagonal |
+| Tensors | Rank-(p,q) | p kets, q bras | Contract indices |
+| Quantum | State | \|ψ⟩ | — |
+| Quantum | Observable | Ô | — |
+| Quantum | Probability | \|⟨o\|ψ⟩\|² | Collapse |
+| Rep. theory | Representation | ρ(g) = Σ \|v⟩⟨w\| | — |
+| Rep. theory | Character | Tr(ρ(g)) | Σ ⟨eᵢ\|ρ(g)\|eᵢ⟩ |
+| L-functions | Local factor | det(I - p^{-s}ρ) | Eigenvalues |
+| Langlands | Correspondence | \|σ⟩⟨σ\| ↔ \|π⟩⟨π\| | L(s,ρ) = L(s,π) |
+
+---
+
+## The Point
+
+There is one structure. It has two atomic types (bra, ket) and one composition (juxtaposition). There is one rewrite rule (yanking).
+
+From this:
+
+1. **Numbers arise** — integers as bra-ket pairs, rationals as nested pairs
+2. **Arithmetic arises** — signs and operations from structural properties
+3. **Linear algebra arises** — vectors, matrices, inner/outer products
+4. **Tensors arise** — multi-index objects with contraction
+5. **Quantum mechanics arises** — states, operators, measurements
+6. **Representation theory arises** — group actions as operators
+7. **L-functions arise** — Euler products over representation data
+8. **The Langlands correspondence arises** — matching bra-ket structures
+
+**These are not analogies.** They are the same structure viewed at different levels of abstraction.
+
+---
+
+## Why This Matters
+
+### For Mathematics
+
+Unification reveals hidden connections. The Langlands Program is profound because it connects number theory to representation theory. Here we see both sides emerge from the same primitive operations.
+
+### For Physics
+
+Quantum mechanics is built on Dirac notation. This notation is not a convenience — it reveals the underlying structure. States, operators, and measurements are bra-ket constructs.
+
+### For Understanding
+
+When disparate fields share the same foundation, learning one illuminates the others. Understanding yanking in arithmetic helps understand contraction in tensor calculus helps understand trace in representation theory.
+
+---
+
+## The Demonstration
+
+```
+python3 spinor.py --demo      # The fundamental rule
+python3 integers.py --demo    # Integers emerge
+python3 multiply.py --demo    # Signs emerge from structure
+python3 divide.py --demo      # Rationals emerge
+python3 tensor.py --demo      # Tensor calculus = bra-ket
+python3 langlands.py --demo   # Langlands lives in bra-ket
+```
+
+---
+
+## Summary
+
+**One grammar:** `|x⟩`, `⟨x|`, and juxtaposition.
+
+**One rule:** `⟨x|x⟩ → ─`.
+
+**All of mathematics follows.**
+
+The structure is simple. The implications are vast. The unity is real.
+
+---
+
+## References
+
+1. Dirac, P.A.M. (1939). *A New Notation for Quantum Mechanics.*
+2. Grothendieck, A. (1950s). *Récoltes et Semailles* (on the Grothendieck construction).
+3. Langlands, R. (1967). *Letter to Weil* (the Langlands Program).
+4. Coecke, B. & Kissinger, A. (2017). *Picturing Quantum Processes* (categorical quantum mechanics).
+
+---
+
+*The structure exists whether we name it or not. The notation reveals what was always there.*
