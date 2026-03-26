@@ -729,14 +729,14 @@ def demo():
         
         # Numbers
         ("eval 0", "Zero is empty wire"),
-        ("eval 3", "3 is three ● pairs"),
-        ("eval (SUCC 2)", "Successor appends one"),
-        ("eval (SUCC (SUCC 1))", "Double successor"),
+        ("eval 3", "3 = chain |#0⟩⟨#3⟩ (endpoint form)"),
+        ("eval (SUCC 2)", "Successor: 2+1=3"),
+        ("eval (SUCC (SUCC 1))", "Double successor: 1+1+1=3"),
         
         # Arithmetic
         ("let a = 2", "Define a = 2"),
         ("let b = 3", "Define b = 3"),
-        ("eval (a b)", "Concatenation = addition"),
+        ("eval (a b)", "Addition: 2+3=5"),
         
         # Functions
         ("eval ID", "Identity function"),
